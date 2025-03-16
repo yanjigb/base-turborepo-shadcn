@@ -8,7 +8,7 @@ This is a feature-packed Turborepo starter with additional tools for modern web 
 - Node.js 20.x or later
 - pnpm 9.x or later
 - Git
-
+- using .env.local for working
 
 
 ### Installation
