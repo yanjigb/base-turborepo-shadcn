@@ -2,14 +2,14 @@ import { env } from "@repo/env";
 import { config, withAnalyzer, withSentry } from "@repo/next-config";
 import type { NextConfig } from "next";
 
-let nextConfig: NextConfig = { ...config };
+const nextConfig = { ...config } as NextConfig;
 
 if (env?.VERCEL) {
-  nextConfig = withSentry(nextConfig);
+  Object.assign(nextConfig, withSentry(nextConfig as any));
 }
 
 if (env?.ANALYZE === "true") {
-  nextConfig = withAnalyzer(nextConfig);
+  Object.assign(nextConfig, withAnalyzer(nextConfig as any));
 }
 
 export default nextConfig;
