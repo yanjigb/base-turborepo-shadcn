@@ -1,6 +1,8 @@
 # Turborepo starter
 This is a feature-packed Turborepo starter with additional tools for modern web applications, including Auth.js 5, Stripe integration, Resend for transactional emails, and typesafe environment variables.
 
+![39897](https://github.com/user-attachments/assets/c9b14c85-d190-4093-b1d7-063022393aee)
+
 ## 🚀 Quick Start
 
 ### Prerequisites
