@@ -1,0 +1,14 @@
+{
+	"extends": "@tooling/typescript-config/base.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"baseUrl": ".",	
+		"rootDir": ".",	
+		"paths": {
+			"@authjs/core/*": ["./*"],
+		},
+		
+	},
+	"include": ["**/*.ts", "index.ts"],
+	"exclude": ["node_modules", "dist"]
+}

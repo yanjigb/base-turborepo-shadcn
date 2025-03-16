@@ -1,0 +1,34 @@
+{
+  "name": "starter-pack",
+  "private": true,
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "biome format .",
+    "check": "biome check --apply .",
+    "format-and-lint": "biome check .",
+    "format-and-lint:fix": "biome check . --write",
+    "ui": "pnpm --filter repo-ui ui",
+    "web": "pnpm --filter web",
+    "email": "pnpm --filter @repo/email",
+    "db": "pnpm --filter @repo/db",
+    "prepare": "husky",
+    "bump-deps": "npx npm-check-updates --deep -u -x react-day-picker && pnpm install",
+    "bump-ui": "npx shadcn@latest add --all --overwrite -c packages/repo-ui"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@types/node": "^22.9.1",
+    "husky": "^9.1.7",
+    "turbo": "^2.3.0",
+    "typescript": "5.5.4"
+  },
+  "packageManager": "pnpm@9.14.2",
+  "engines": {
+    "node": ">=18"
+  }
+}

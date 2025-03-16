@@ -1,0 +1,10 @@
+{
+	"extends": "@tooling/typescript-config/nextjs.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"rootDir": ".",
+		"baseUrl": ".",	},
+	"include": ["**/*.ts", "migrate.js"],
+	"exclude": ["node_modules", "dist"],
+    
+}
